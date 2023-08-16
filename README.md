@@ -11,6 +11,6 @@ DB_USER=postgres
 DB_PASSWORD=pswd
 
 
-Para ejecutar las queries sobre su base de datos debe dirigirse a la carpeta database/creationQuery.sql
+Para ejecutar las queries sobre su base de datos debe dirigirse a la carpeta `database/creationQuery.sql`
 
-Para generar datos de prueba en la base de datos, ejecuta el comando: `npm run data`.
+Para generar datos de prueba en la carpeta `helpers`, ejecuta el comando: `npm run data`.
