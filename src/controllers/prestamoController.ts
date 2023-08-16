@@ -12,7 +12,7 @@ export const getPrestamoById = async (
   const { id } = req.params;
   try {
     const queryResult = await Prestamo.findByPk(id, {
-      include: { model: Usuario, as: "Usuario" , attributes:["tipo"]},
+      include: { model: Usuario, as: "Usuario", attributes: ["tipo"] },
     });
 
     const dto = {
@@ -20,8 +20,7 @@ export const getPrestamoById = async (
       isbn: queryResult?.libroId,
       identificacionUsuario: queryResult?.usuarioId,
       fechaMaximaDevolucion: queryResult?.fechaMaximaDevolucion,
-      tipoUsuario:queryResult?.getDataValue("Usuario")
-    
+      tipoUsuario: queryResult?.getDataValue("Usuario"),
     };
     return res.status(200).json(dto);
   } catch (error) {
@@ -49,16 +48,6 @@ export const createPrestamo = async (
 
     if (!libroExistente) {
       await Libro.create({ isbn });
-    } else {
-      const bookIsTaken = await Prestamo.findOne({
-        where: { libroId: isbn },
-      });
-
-      if (bookIsTaken) {
-        return res.status(403).json({
-          message: "El libro ha sido tomado por otro usuario",
-        });
-      }
     }
     //Verificar si el usuario existe
     const usuarioExistente = await Usuario.findOne({
@@ -92,7 +81,16 @@ export const createPrestamo = async (
       usuarioId: identificacionUsuario,
       libroId: isbn,
     });
-    return res.status(200).json(queryResult);
+
+    const dto = {
+      id: queryResult?.id,
+      isbn: queryResult?.libroId,
+      identificacionUsuario: queryResult?.usuarioId,
+      tipoUsuario: userType,
+      fechaMaximaDevolucion: queryResult?.fechaMaximaDevolucion,
+    };
+
+    return res.status(200).json(dto);
   } catch (error) {
     console.error(error);
     return res

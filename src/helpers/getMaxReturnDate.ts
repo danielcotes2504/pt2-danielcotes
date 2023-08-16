@@ -6,12 +6,9 @@ export const getMaxReturnDate = (userType: number): string => {
 
   let finalDate = today.plus({ days: userTypeDays[userType - 1] });
 
-
-  console.log("Final DATE  " + userTypeDays[userType - 1] );
-
   while (finalDate.weekday === 6 || finalDate.weekday === 7) {
     finalDate = finalDate.plus({ days: 1 });
   }
- 
+
   return finalDate.toSQL() as string;
 };
