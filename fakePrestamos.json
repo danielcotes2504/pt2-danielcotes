@@ -1,0 +1,57 @@
+[
+  {
+    "isbn": "899ad149-42d7-18f1-a97f-116d77db5f91",
+    "identificacionUsuario": 209560,
+    "tipoUsuario": 3
+  },
+  {
+    "isbn": "a52a50b7-e39e-c70b-3e07-9ba33d9ccc0f",
+    "identificacionUsuario": 202646,
+    "tipoUsuario": 2
+  },
+  {
+    "isbn": "69efa925-4b8c-4246-220c-17fc83f5a790",
+    "identificacionUsuario": 228634,
+    "tipoUsuario": 1
+  },
+  {
+    "isbn": "72d0a855-27f6-6841-93ee-6cccd7a1885e",
+    "identificacionUsuario": 219756,
+    "tipoUsuario": 1
+  },
+  {
+    "isbn": "bba20e1d-500f-bfb9-32f2-954d8db6d484",
+    "identificacionUsuario": 107427,
+    "tipoUsuario": 1
+  },
+  {
+    "isbn": "e6a727ff-0619-a37b-ea58-dd9a924b55ba",
+    "identificacionUsuario": 190323,
+    "tipoUsuario": 2
+  },
+  {
+    "isbn": "74c6e546-e3fb-da94-dc99-cb02c7f99ad0",
+    "identificacionUsuario": 115201,
+    "tipoUsuario": 2
+  },
+  {
+    "isbn": "6f9725b8-d156-571c-be4a-03c84939fdec",
+    "identificacionUsuario": 225292,
+    "tipoUsuario": 3
+  },
+  {
+    "isbn": "9d7a1b31-bd07-334c-cd39-6f7435cf4625",
+    "identificacionUsuario": 275680,
+    "tipoUsuario": 3
+  },
+  {
+    "isbn": "7df46654-5e8e-c372-4010-c3440b2e6471",
+    "identificacionUsuario": 274838,
+    "tipoUsuario": 3
+  },
+  {
+    "isbn": "86b3dbc4-711b-a058-c893-09dc08e827fb",
+    "identificacionUsuario": 205043,
+    "tipoUsuario": 2
+  }
+]
